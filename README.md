@@ -1,7 +1,6 @@
 # Weather App
 
-https://fastidious-meringue-4d1c10.netlify.app
-
+https://nao-nkgw-weather.netlify.app
 
 # Getting Started with Create React App
 
