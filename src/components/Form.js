@@ -9,7 +9,7 @@ const Form = (props) => {
       <input
         type="text"
         name="city"
-        placeholder="please enter city's name in english"
+        placeholder="Enter city name"
         onChange={(e) => props.setCity(e.target.value)}
         value={props.city}
       />

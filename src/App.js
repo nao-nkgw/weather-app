@@ -33,10 +33,10 @@ function App() {
         return sunnyBackground;
       case "Rain":
       case "Moderate rain":
+      case "Light rain":
         return rainyBackground;
       case "Cloudy":
       case "Partly cloudy":
-      case "Light rain":
         return cloudyBackground;
       case "thunder":
       case "Patchy light rain with thunder":
@@ -62,7 +62,8 @@ function App() {
 
     axios
       .get(
-        `https://api.weatherapi.com/v1/current.json?key=9189be9a2ffb40a29a9134532233108&q=${city}&aqi=no`
+/*         `https://api.weatherapi.com/v1/current.json?key=9189be9a2ffb40a29a9134532233108&q=${city}&aqi=no` */
+`https://api.weatherapi.com/v1/current.json?key=1fc664ec63e740b28ef113737231309&q=${city}&aqi=no`
       )
       .then((res) => {
         setResults({
@@ -75,7 +76,9 @@ function App() {
         setCity("");
         setLoading(false);
       })
-      .catch((err) => alert(`Error! "${city}" can be wrong spelling. Please try it again.`));
+      .catch((err) =>
+        alert(`Error! "${city}" can be wrong spelling. Please try it again.`)
+      );
   };
 
   return (
